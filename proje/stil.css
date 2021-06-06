@@ -17,3 +17,20 @@
 img{margin-right: 5px; border: 0px solid rgb(134, 21, 21); width: 496px; height: 500px; float: left; }
 
 
+
+.box div form 
+{
+    color: #aa1313;
+    font-size: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 350px 0 0 0;
+    text-align: center;
+}
+
+#but
+{
+    height: 50px;
+    width: 150px;
+    background: #360101;
+}
+
