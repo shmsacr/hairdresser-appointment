@@ -1,0 +1,143 @@
+.ust
+{
+    width: 100%;
+    height: 46px;
+    background: rgb(31, 30, 30);
+ }
+
+.orta
+{
+    width: 100%;
+    height: 750px;
+    background: #fff;
+}
+
+.orta1
+{
+    width: 100%;
+    height: 550px;
+    background: rgb(90, 3, 3);
+}
+.alt
+{
+    width: 100%;
+    height: 82px; background: rgb(10, 10, 10);
+}
+.menu
+{
+    width:1076px ;
+    height: 46px; margin: 0 auto;
+}
+
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    border: 0; outline: 0;
+    list-style: none;
+}
+
+.menu ul li
+{
+    float: left;
+}
+
+.menu ul li a
+{ 
+    display: block;
+    width: 145px;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    font: 15px tahoma ;
+    color: #ffff;
+    padding: 15px 0 0 60px;
+}
+
+.menu ul li#logo a
+{
+    width:  30px;
+    height: 31px;
+    background:url(images/logo.png) center center;
+    background-size: cover; 
+}
+
+.menu ul li a:hover
+{
+    color: red
+}
+
+.orta1 u
+{
+     display: block;
+     width: 200px;
+     height: 50px;
+     text-decoration: none;
+     text-align: center;
+     font: 30px Algerian; color: rgb(245, 165, 165);
+     padding:0 0 0 600;
+    }
+
+.rand
+{
+    width:100%;
+    height:750px;
+    background:url(images/arkaplan1.jpg) ;
+}
+
+.saln
+{
+    width:100%;
+    height: 46px;
+    background: #360101;
+}
+
+
+img
+{
+    margin-right: 5px;
+    border: 0px solid rgb(134, 21, 21);
+    width: 496px;
+    height: 500px;
+    float: left; 
+}
+
+
+
+
+.box
+{
+   
+    width: 900px;
+    height: 600px;
+    background: #fff;
+    position: relative;
+    margin: auto;
+    top: 100px;
+    background:url(images/arkaplan1.jpg) center center; 
+    opacity: 0.8;
+    background-size: cover;
+   
+}
+
+.box div form 
+{
+    color: #aa1313;
+    font-size: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 1px 0 0 0;
+    text-align: center;
+    
+}
+
+#but
+{
+    height: 50px;
+    width: 150px;
+    background: #b92020;
+}
+#trh
+{
+    color: rgb(119, 154, 168);
+}
+
