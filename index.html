@@ -3,6 +3,35 @@
         <title>Berberin.com</title>
         <link rel="stylesheet" href="stil.css" />
         <script type="text/javascript">
+
+            function myfon(){
+                var ad = document.getElementById("isim").value;
+                var tel1 = document.getElementById("tel").value
+                var tarih = document.getElementById("tarih").value
+                
+                var saat = document.getElementsByName('saat');
+                var saat1= "";
+                for(var i = 0 ; i<saat.length; i++){
+                    if(saat[i].checked)
+                    saat1 +=saat[i].value;
+                    
+                    }
+                    
+                    if(document.getElementById("isim").value == "")
+                        window.alert("isminizi giriniz!!!");
+                    else if(document.getElementById("tarih").value == "")  
+                        window.alert("TARİH SEÇİNİZ!!!");
+                    
+                    else if (saat1 == "")
+                        window.alert("Saati seçiniz!!!");
+                    else if(document.getElementById("tel").value == "")
+                        window.alert("Telefon numarası giriniz!!!")
+                else
+                window.alert( "SAYIN:" + " "+ ad  + "  " + "Randevu tarihiniz: " + " "+ tarih +" "+ "Saat: " + saat1 +" " +"TARİHİNE ALINMIŞTIR!");
+               
+                
+            }
+
         </script>
     </head>
     <body>
@@ -27,37 +56,47 @@
                             <tr>
                                  <td>
                                     <h1>RANDEVU</h1>
-                                    <label for="tarih" id="trh">RANDEVU TARİHİ</label>
-                                    <input type="date" name="tarih" id="tarih"> <br> <br>
-                                    <input name="saat" type="radio">9:00 &nbsp;
-                                    <input name="saat" type="radio">9:30
-                                    <input name="saat" type="radio">10:00
-                                    <input name="saat" type="radio">10:30 <br>
-                                    <input name="saat" type="radio">11:00
-                                    <input name="saat" type="radio">11:30
-                                    <input name="saat" type="radio">12:00
-                                    <input name="saat" type="radio">12:30 <br>
-                                    <input name="saat" type="radio">13:00
-                                    <input name="saat" type="radio">13:30
-                                    <input name="saat" type="radio">14:00
-                                    <input name="saat" type="radio">14:30 <br>
-                                    <input name="saat" type="radio">15:00
-                                    <input name="saat" type="radio">15:30
-                                    <input name="saat" type="radio">16:00
-                                    <input name="saat" type="radio">16:30 <br>
-                                    <input name="saat" type="radio">17:00
-                                    <input name="saat" type="radio">17:30
-                                    <input name="saat" type="radio">18:00
-                                    <input name="saat" type="radio">18:30 <br>
-                                    <input name="saat" type="radio">19:00
-                                    <input name="saat" type="radio">19:30
-                                    <input name="saat" type="radio">20:00
-                                    <input name="saat" type="radio">20:30 <br>
+                                    <label for="tarih" id="trh" >RANDEVU TARİHİ</label>
+                                    <input type="date" name="tarih" id="tarih" value="" > <br> <br>
+                                    <input name="saat" type="radio" value="9:00">9:00 &nbsp;
+                                    <input name="saat" type="radio" value="9:30">9:30
+                                    <input name="saat" type="radio" value="10:00">10:00
+                                    <input name="saat" type="radio" value="10:30">10:30 <br>
+                                    <input name="saat" type="radio" value="11:00">11:00
+                                    <input name="saat" type="radio" value="11:30">11:30
+                                    <input name="saat" type="radio" value="12:00">12:00
+                                    <input name="saat" type="radio" value="12:30">12:30 <br>
+                                    <input name="saat" type="radio" value="13:00">13:00
+                                    <input name="saat" type="radio" value="13:30">13:30
+                                    <input name="saat" type="radio" value="14:00">14:00
+                                    <input name="saat" type="radio" value="14:30">14:30 <br>
+                                    <input name="saat" type="radio" value="15:00">15:00
+                                    <input name="saat" type="radio" value="15:30">15:30
+                                    <input name="saat" type="radio" value="16:00">16:00
+                                    <input name="saat" type="radio" value="16:30">16:30 <br>
+                                    <input name="saat" type="radio" value="17:00">17:00
+                                    <input name="saat" type="radio" value="17:30">17:30
+                                    <input name="saat" type="radio" value="18:30">18:00
+                                    <input name="saat" type="radio" value="18:30">18:30 <br>
+                                    <input name="saat" type="radio" value="19:00">19:00
+                                    <input name="saat" type="radio" value="19:30">19:30
+                                    <input name="saat" type="radio" value="20:00">20:00
+                                    <input name="saat" type="radio" value="20:30">20:30 <br> <br>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <label for="" id="bilg">İsim Soyisim</label>
+                                <td>
+                                    <input type="text" name=""  value="" id="isim">
+
+                                    <label for="" id="bilg">Telefon Numarası</label> 
+                                    <input type="text "  value="" id="tel"> <br> <br> <br>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="button" value="RANDEVU AL" id="but">
+                                    <input type="button" value="RANDEVU AL" id="but" onclick="myfon()"> 
                                 </td>
                             </tr>    
                     </div>
